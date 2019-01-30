@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+:root {
+    --bluegray:#1f2e4e;
+    --blue:#2980b9;
+    --lgray:#747d8c;
+    --afwhite:#f1f2f6;
+    --opblack:rgba(0,0,0,.5);
+}
+
+#bg {
+    position:absolute;
+    margin:0;
+    padding:0;
+    width:100vw;
+    height:100vh;
+    background-color:var(--bluegray);
+    z-index:-1;
+}
+
+#ski {
+    position:absolute;
+    z-index:0;
+    width:700px;
+    height:90%;
+    top:5%;
+    right:0;
+    /*prevent*/
+    user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+    pointer-events:none;
+    -webkit-user-drag: none;
+}
+
+#frame {
+    position:absolute;
+    z-index:1;
+    top:3%;
+    width:100vw;
+    box-shadow:0px 0px 2px 2px rgb(75, 75, 75);
+}
+
+#frame2 {
+    position:absolute;
+    z-index:1;
+    top:97%;
+    width:100vw;
+    box-shadow:0px 0px 2px 2px rgb(75, 75, 75);
+}
+
+#welcome {
+    position:absolute;
+    font-size:25px;
+    top:50%;
+    right:53%;
+    transform:translate(53%,-50%);
+    width:580px;
+    text-align:right;
+    color:#ccc;
+    line-height:35px;
+    letter-spacing:1.7px;
+    font-family: 'Montserrat', sans-serif;
+    background-color:rgba(110, 110, 110, 0.4);
+    padding:10px;
+
+    border-top:4px  solid;
+    border-left:4px solid;
+
+    border-image: linear-gradient(to left, rgba(219, 219, 219,.85) 25%, rgb(8, 179, 179) 75%) 5 ;
+}
+
+ul {
+    position:absolute;
+    list-style:none;
+    text-align:center;
+    top:50%;
+    left:5%;
+    transform:translate(-5%,-50%);
+    border-right:4px var(--opblack) solid;
+    border-left:4px var(--opblack) solid;
+    padding-right:35px;
+    padding-left:35px;
+
+}
+
+ul li {
+    color:#ccc;
+    font-size:40px;
+    line-height:70px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    letter-spacing:10px;
+    /*prevent*/
+    user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+}
+
+ul li:hover {
+    transition-duration:.5s;
+    color:rgb(255, 255, 255);
+    cursor:pointer;
+    text-shadow:-5px -1px 2px #000,
+    4px 2px 2px rgb(136, 136, 136);
+}
+
+#toggle {
+    position:absolute;
+    z-index:1;
+    top:50%;
+    transform:translateY(-50%);
+    height:30px;
+    width:50px;
+    padding:5px 5px 0px 5px;
+}
+
+#toggle:hover {
+    cursor:pointer
+}
+
+ #line1,#line2,#line3 {
+    position:absolute;
+    width:50px;
+    height:0px;
+
+}
+
+
+#line1 {
+    transition-duration:.5s;
+    /*transform:rotate(55deg);*/
+    border-top:2px #fff solid;
+    box-shadow:1px 1.5px 3px 1px #000; 
+}
+
+
+#line1.en1 {
+    animation-delay:0s!important;
+    animation:line1 1.5s forwards;
+
+
+}
+
+@keyframes line1 {
+    0% {
+
+        transform:rotate(0deg);
+        box-shadow:1px 1.5px 3px 1px #000; 
+
+    }
+    80%{opacity:1;}
+    100% {
+
+        transform:rotate(55deg);
+        opacity:.7;
+        box-shadow:none; 
+
+    }
+
+}
+
+
+
+
+#line2 {
+    transition-duration:1s;
+    margin-top:10px;/*40px for arrow*/
+    /*transform:rotate(-55deg);*/
+    border-bottom:2px #fff solid;
+    box-shadow:1px 1.5px 3px 1px #000; 
+}
+
+#line2.en2 {
+    animation-delay:.5s!important;
+    animation:line2 .8s forwards;
+
+
+}
+
+@keyframes line2 {
+    0% {
+        margin-top:20px;
+        transform:rotate(0deg);
+        box-shadow:1px 1.5px 3px 1px #000; 
+    }
+
+    50%{
+        margin-top:40px;
+        transform:rotate(0deg);
+
+
+    }
+    80%{opacity:1;}
+    100%{
+        transform:rotate(-55deg);
+        margin-top:40px;
+        opacity:.7;
+        box-shadow:none; 
+    }
+
+}
+
+#line3 {
+    transition-duration:.5s;
+    margin-top:20px;
+    /*transform:rotate(-55deg);*/
+    border-bottom:2px #fff solid;
+    box-shadow:1px 1.5px 3px 1px #000; 
+}
+
+#line3.en3 {
+    transition-duration:.5s;
+    margin-top:25px;
+    opacity:0;
+}
+
+
+
