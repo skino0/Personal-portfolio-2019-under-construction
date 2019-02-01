@@ -5,7 +5,12 @@
     --blue:#2980b9;
     --lgray:#747d8c;
     --afwhite:#f1f2f6;
+    --white:#fff;
     --opblack:rgba(0,0,0,.5);
+    --black:rgba(0,0,0);
+    /*gradient*/
+    --gragray:rgba(88,88,88,.95);
+    --grawhite:rgba(238,238,238,.95);
 }
 
 #bg {
@@ -55,16 +60,21 @@
     transform:translateY(-20%);
     width:550px;
     text-align:right;
-    color:rgb(0, 0, 0);
+    color:var(--black);
     font-weight:600;
     line-height:35px;
     letter-spacing:1.7px;
     font-family: 'Montserrat', sans-serif;
-    background-color:rgba(238, 238, 238, 0.7);
+    background: rgb(88,88,88); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, var(--gragray) 0%, var(--grawhite) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, var(--gragray) 0%,var(--grawhite) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, var(--gragray) 0%,var(--grawhite) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#585858', endColorstr='#eeeeee',GradientType=1 ); 
     padding:10px;
     border-top:4px  solid;
     border-left:4px solid;
     border-image: linear-gradient(to left, rgba(219, 219, 219,.85) 25%, rgb(8, 179, 179) 75%) 5 ;
+    text-shadow:1.8px .8px .5px rgb(197, 197, 197); 
 }
 
 #welcome2 {
@@ -73,18 +83,24 @@
     top:80%;
     left:0%;
     transform:translateY(-80%);
-    width:700px;
+    width:740px;
     text-align:left;
-    color:rgb(0, 0, 0);
+    color:var(--black);
     font-weight:600;
     line-height:35px;
     letter-spacing:1.7px;
     font-family: 'Montserrat', sans-serif;
-    background-color:rgba(238, 238, 238, 0.7);
+    background: rgb(238,238,238); /* Old browsers */
+    background: -moz-linear-gradient(45deg, var(--grawhite) 0%, var(--gragray) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, var(--grawhite) 0%,var(--gragray) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, var(--grawhite) 0%,var(--gragray) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#585858',GradientType=1 );
     padding:10px;
     border-top:4px  solid;
     border-right:4px solid;
-    border-image: linear-gradient(to right, rgba(219, 219, 219,.85) 25%, rgb(8, 179, 179) 75%) 5 ;
+    border-image: linear-gradient(to right, rgba(219, 219, 219,.85) 25%, rgb(8, 179, 179) 75%) 5;
+    text-shadow:1.8px .8px .5px rgb(197, 197, 197); 
+
 }
 
 #welcome:hover{
@@ -94,7 +110,6 @@
     -moz-user-select:none;
     -ms-user-select:none;
     -o-user-select:none;
-
 }
 
 
@@ -112,14 +127,12 @@
 }
 
 #nav.visible {
-
     animation:visible 2s forwards;
     top:15%;
     left:5%;
     transform:translate(-5%,-15%);
     padding-top:35px;
     padding-bottom:35px;
-
 }
 
 @keyframes visible {
@@ -130,7 +143,6 @@
         padding-top:10px;
         padding-bottom:10px;
     }
-
     50% {
         top:15%;
         left:5%;
@@ -138,7 +150,6 @@
         padding-top:10px;
         padding-bottom:10px;
     }
-
     100%{
         top:15%;
         left:5%;
@@ -161,9 +172,9 @@ ul li {
 
 ul li:hover {
     transition-duration:.5s;
-    color:rgb(255, 255, 255);
+    color:var(--white);
     cursor:pointer;
-    text-shadow:-5px -1px 2px #000,
+    text-shadow:-5px -1px 2px var(--black),
     4px 2px 2px rgb(136, 136, 136);
 }
 
@@ -171,7 +182,7 @@ ul li:hover {
     position:absolute;
     z-index:1;
     top:8%;
-    left:1.4%;
+    left:1%;
     transform:translateY(-8%);
     height:30px;
     width:50px;
@@ -182,20 +193,21 @@ ul li:hover {
 #toggle.clicked {
     animation-delay:2s!important;
     animation:hide .5s forwards;
+    -webkit-animation-delay:2s!important;
+    -webkit-animation:hide .5s forwards;
+    -moz-animation-delay:2s!important;
+    -moz-animation:hide .5s forwards;
+    -ms-animation-delay:2s!important;
+    -ms-animation:hide .5s forwards;
+    -o-animation-delay:2s!important;
+    -o-animation:hide .5s forwards;
 }
 
-@keyframes hide {
-    0%{
-        opacity:1;
-        filter:blur(0px);
-    }
-    90%{filter:blur(80px);}
-    100%{
-        opacity:0;
-        filter:blur(90px);
-        display:none;
-    }
-}
+@keyframes hide {0%{opacity:1;filter:blur(0px);}90%{filter:blur(80px);}100%{opacity:0;filter:blur(90px);display:none;}}
+@-webkit-keyframes hide {0%{opacity:1;filter:blur(0px);}90%{filter:blur(80px);}100%{opacity:0;filter:blur(90px);display:none;}}
+@-moz-keyframes hide {0%{opacity:1;filter:blur(0px);}90%{filter:blur(80px);}100%{opacity:0;filter:blur(90px);display:none;}}
+@-ms-keyframes hide {0%{opacity:1;filter:blur(0px);}90%{filter:blur(80px);}100%{opacity:0;filter:blur(90px);display:none;}}
+@-o-keyframes hide {0%{opacity:1;filter:blur(0px);}90%{filter:blur(80px);}100%{opacity:0;filter:blur(90px);display:none;}}
 
 #toggle:hover {
     cursor:pointer
@@ -203,16 +215,16 @@ ul li:hover {
 
  #line1,#line2,#line3 {
     position:absolute;
-    width:50px;
+    width:80px;
     height:0px;
+    box-shadow:1px 1.5px 3px .5px rgb(64, 91, 243); 
 
 }
 
 #line1 {
     transition-duration:.5s;
     /*transform:rotate(55deg);*/
-    border-top:4px #fff solid;
-    box-shadow:1px 1.5px 3px 1px #000; 
+    border-top:3.2px var(--white) solid;
 }
 
 #line1.en1 {
@@ -225,8 +237,7 @@ ul li:hover {
     transition-duration:1s;
     margin-top:15px;/*40px for arrow*/
     /*transform:rotate(-55deg);*/
-    border-bottom:4px #fff solid;
-    box-shadow:1px 1.5px 3px 1px #000; 
+    border-bottom:3.2px var(--white) solid;
 }
 
 #line2.en2 {
@@ -239,8 +250,7 @@ ul li:hover {
     transition-duration:.5s;
     margin-top:30px;
     /*transform:rotate(-55deg);*/
-    border-bottom:4px #fff solid;
-    box-shadow:1px 1.5px 3px 1px #000; 
+    border-bottom:3.2px var(--white) solid;
 }
 
 #line3.en3 {
