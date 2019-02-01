@@ -23,19 +23,6 @@
     z-index:-1;
 }
 
-#ski {
-    position:absolute;
-    z-index:0;
-    width:700px;
-    height:90%;
-    top:5%;
-    right:0;
-    /*prevent*/
-    user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
-    pointer-events:none;
-    -webkit-user-drag: none;
-}
-
 #frame {
     position:absolute;
     z-index:1;
@@ -50,6 +37,21 @@
     top:97%;
     width:100vw;
     box-shadow:0px 0px 2px 2px rgb(221, 221, 221);
+}
+
+/*first visible elements */
+
+#ski {
+    position:absolute;
+    z-index:0;
+    width:700px;
+    height:90%;
+    top:5%;
+    right:0;
+    /*prevent*/
+    user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+    pointer-events:none;
+    -webkit-user-drag: none;
 }
 
 #welcome {
@@ -112,7 +114,10 @@
     -o-user-select:none;
 }
 
+/*end of first visible elements */
 
+
+/*nav all */
 #nav {
     position:absolute;
     list-style:none;
@@ -258,6 +263,8 @@ ul li:hover {
     margin-top:25px;
     opacity:0;
 }
+
+/*nav end*/
 
 
 
