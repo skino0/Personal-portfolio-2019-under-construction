@@ -22,8 +22,12 @@ somewhere social media
     --opblack:rgba(0,0,0,.5);
     --black:rgba(0,0,0);
     /*gradient*/
-    --gragray:rgba(88,88,88,.95);
-    --grawhite:rgba(238,238,238,.95);
+
+}
+
+::selection {
+    background-color:rgba(110, 110, 110, 0.5);
+
 }
 
 #bg {
@@ -95,9 +99,10 @@ somewhere social media
     position:absolute;
     list-style:none;
     z-index:1;
-    top:50%;
+    top:15%;
     left:0%;
-    transform:translateY(-50%);
+    user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+
 }
 
 #nav li:first-of-type {
@@ -120,14 +125,11 @@ somewhere social media
 }
 
 #nav li:hover {
-    transition-duration:.5s;
+    transition-duration:.35s;
     cursor:pointer;
-    color:#000;
-    text-shadow:2.8px -.5px 0px rgba(255,255,255,.75); 
+    color:#1e90ff;
+    text-shadow:2.8px .5px 0px rgb(255,255,255); 
 }
-
-
-
 
 /*nav end*/
 
@@ -146,21 +148,59 @@ somewhere social media
     top:5%;
     animation-delay:1s!important;
     animation:olayjoin .8s forwards;
-
+    -webkit-animation-delay:1s!important;
+    -webkit-animation:olayjoin .8s forwards;
+    -moz-animation-delay:1s!important;
+    -moz-animation:olayjoin .8s forwards;
 }
 
-@keyframes olayjoin {
+@keyframes olayjoin {0%{right:100%;}100% {right:700px;}}
+@-webkit-keyframes olayjoin {0%{right:100%;}100% {right:700px;}}
+@-moz-keyframes olayjoin {0%{right:100%;}100% {right:700px;}}
+
+#aboutme {
+    position:absolute;
+    top:15%;
+    right:730px;
+    text-align:center;
+    font-size:25px;
+    width:700px;
+    height:0px;
+    color:#fff;
+    line-height:40px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing:2px;
+    background-color:rgba(0,0,0,.4);
+    padding:50px 20px 50px 20px;
+    animation-delay:1.8s!important;
+    animation:aboutmejoin 2s forwards;
+    opacity:0;
+    user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+}
+
+@keyframes aboutmejoin {
     0%{
-        right:100%;
-
+        opacity:0;
+        height:0px!important;
+        padding-top:0px!important;
+        padding-bottom:0px!important;
+        white-space: wrap;
+        overflow: hidden;
     }
 
-    100% {
-        right:700px;
-
-
+    100%{
+        opacity:1;
+        height:500px;
+        padding:50px 20px 50px 20px;
+        white-space: wrap;
+        overflow: hidden;
     }
-
-
 }
 
+
+
+
+
+
+  
+  
