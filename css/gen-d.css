@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree');
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 /*tommorow
@@ -89,6 +89,42 @@ somewhere social media
     }
 }
 
+/*nav*/
+
+#nav {
+    position:absolute;
+    list-style:none;
+    z-index:1;
+    top:50%;
+    left:0%;
+    transform:translateY(-50%);
+}
+
+#nav li:first-of-type {
+    margin-top:0px;
+}
+
+#nav li:not(:first-of-type) {
+    margin-top:30px;
+}
+
+#nav li {
+    margin-left:20px;
+    font-family: 'Staatliches', cursive;
+    font-size:45px;
+    color:rgba(255,255,255,.95);
+    letter-spacing:4.5px;
+    text-shadow:2.8px -.5px 0px #000;
+    font-weight:900;
+    transition-duration:1s;
+}
+
+#nav li:hover {
+    transition-duration:.5s;
+    cursor:pointer;
+    color:#000;
+    text-shadow:2.8px -.5px 0px rgba(255,255,255,.75); 
+}
 
 
 
