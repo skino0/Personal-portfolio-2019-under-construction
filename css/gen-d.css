@@ -107,14 +107,18 @@ somewhere social media
 
 #nav li:first-of-type {
     margin-top:0px;
+    animation-delay:3.5s!important;
+
 }
 
 #nav li:not(:first-of-type) {
     margin-top:30px;
+    animation-delay:4s!important;
+
 }
 
 #nav li {
-    margin-left:20px;
+    margin-left:-500px;
     font-family: 'Staatliches', cursive;
     font-size:45px;
     color:rgba(255,255,255,.95);
@@ -122,6 +126,7 @@ somewhere social media
     text-shadow:2.8px -.5px 0px #000;
     font-weight:900;
     transition-duration:1s;
+    animation:naveljoin .4s forwards;
 }
 
 #nav li:hover {
@@ -129,6 +134,19 @@ somewhere social media
     cursor:pointer;
     color:#1e90ff;
     text-shadow:2.8px .5px 0px rgb(255,255,255); 
+}
+
+@keyframes naveljoin {
+    0%{
+        margin-left:-500px;
+
+    }
+
+    100%{
+        margin-left:20px;
+
+
+    }
 }
 
 /*nav end*/
@@ -190,7 +208,7 @@ somewhere social media
 
     100%{
         opacity:1;
-        height:500px;
+        height:520px;
         padding:50px 20px 50px 20px;
         white-space: wrap;
         overflow: hidden;
