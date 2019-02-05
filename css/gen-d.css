@@ -158,13 +158,6 @@ a{text-decoration:none;}
     /*265width*/
 }
 
-#contact.clicked {
-
-
-}
-
-
-
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
 #mail {
     white-space:nowrap;
@@ -178,11 +171,7 @@ a{text-decoration:none;}
     margin-bottom:50px;
     border:none;
     padding:0px;
-    
 }
-
-
-
 
 /*nav end*/
 
