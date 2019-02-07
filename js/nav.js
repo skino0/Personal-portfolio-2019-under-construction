@@ -7,5 +7,10 @@ $(document).ready(function(){
 
     });
 
+    $('.project:eq( 0 )').click(function(){
+        $('.folder:eq( 0 )').addClass('hide');
+        $('.folder2:eq( 1 )').addClass('visible').css('display','block');
 
+
+    });
 }); 
