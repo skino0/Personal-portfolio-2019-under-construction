@@ -284,14 +284,13 @@ br {
 #projects {
     height:100%;
     text-align:left;
-    
 }
 
 .project {
     width:50%;
     font-size:20px;
     padding:25px 0 0 15px;
-
+    display:inline-block!important;
 
 }
 
@@ -299,67 +298,21 @@ br {
 
 .project a {
     color:#fff;
-
 }
 
-.folder{
+
+.folder::before {
+    content: "\f07b";
+    font-family: 'Font Awesome\ 5 Free';
     font-size:28px;
     font-weight:500;
-    padding-right:20px;
-}
-
-.folder2{
-    font-size:28px;
-    font-weight:500;
-    padding-right:20px;
-    display:none;
-
     
 }
 
-.folder.hide{
-    animation-fill-mode:both;
-    animation:hide 1s forwards;
+.folder.change::before {
+    transition-duration:.5s;
+    content: "\f07c";
 }
-
-@keyframes hide {
-    0% {
-        opacity:1; 
-    }
-
-    100% {
-        opacity:0;
-    }
-}
-
-.folder2.visible{
-        animation-fill-mode:both;
-        animation:visible 1s forwards;
-        display:block!important;
-
-    }
-    
-    @keyframes visible {
-        0% {
-            display:none;
-        }
-    
-        100% {
-            opacity:0;
-            display:block!important;
-        }
-    }
-
-.folderr{position:relative;}
-    .folderr:before {
-            content: "\f07b";  /* this is your text. You can also use UTF-8 character codes as I do here */
-            font-family:FontAwesome5Free;
-            left:-5px;
-            position:absolute;
-            top:0;
-         }
-
-    }
 
 
 
