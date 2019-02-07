@@ -105,21 +105,22 @@ a{text-decoration:none;}
     z-index:1;
     top:15%;
     left:0%;
+    right:80%;
     user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
 }
 
-#nav li:first-of-type {
+#nav .li:first-of-type {
     margin-top:0px;
     animation-delay:3.5s!important;
 }
 
-#nav li:not(:first-of-type) {
+#nav .li:not(:first-of-type) {
     margin-top:30px;
     animation-delay:4s!important;
 
 }
 
-#nav li {
+#nav .li {
     margin-left:-500px;
     font-family: 'Staatliches', cursive;
     font-size:45px;
@@ -134,7 +135,7 @@ a{text-decoration:none;}
 
 }
 
-#nav li:hover {
+#nav .li:hover {
     transition-duration:.35s;
     cursor:pointer;
     color:#1e90ff;
@@ -203,17 +204,16 @@ a{text-decoration:none;}
 #aboutme {
     position:absolute;
     top:15%;
-    right:730px;
-    text-align:center;
+    right:670px;
     font-size:25px;
-    width:700px;
+    width:770px;
     height:0px;
     color:#fff;
-    line-height:40px;
+    line-height:45px;
     font-family: 'Montserrat', sans-serif;
     letter-spacing:2px;
-    background-color:rgba(0,0,0,.4);
-    padding:50px 20px 50px 20px;
+    background-color:rgba(8, 8, 8, 0.9);
+    padding:35px 20px 55px 20px;
     opacity:0;
     user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
     animation-delay:1.8s!important;
@@ -222,6 +222,11 @@ a{text-decoration:none;}
     -webkit-animation:aboutmejoin 2s forwards;
     -moz-animation-delay:1.8s!important;
     -moz-animation:aboutmejoin 2s forwards;
+    z-index:3;
+}
+
+br {
+    line-height:40px;
 }
 
 @keyframes aboutmejoin {
@@ -236,7 +241,7 @@ a{text-decoration:none;}
     100%{
         opacity:1;
         height:520px;
-        padding:50px 20px 50px 20px;
+        padding:35px 20px 55px 20px;
         white-space: wrap;
         overflow: hidden;
     }
@@ -253,7 +258,7 @@ a{text-decoration:none;}
     100%{
         opacity:1;
         height:520px;
-        padding:50px 20px 50px 20px;
+        padding:35px 20px 50px 20px;
         white-space: wrap;
         overflow: hidden;
     }
@@ -270,15 +275,91 @@ a{text-decoration:none;}
     100%{
         opacity:1;
         height:520px;
-        padding:50px 20px 50px 20px;
+        padding:35px 20px 55px 20px;
         white-space: wrap;
         overflow: hidden;
     }
 }
 
+#projects {
+    height:100%;
+    text-align:left;
+    
+}
+
+.project {
+    width:50%;
+    font-size:20px;
+    padding:25px 0 0 15px;
+
+
+}
 
 
 
+.project a {
+    color:#fff;
+
+}
+
+.folder{
+    font-size:28px;
+    font-weight:500;
+    padding-right:20px;
+}
+
+.folder2{
+    font-size:28px;
+    font-weight:500;
+    padding-right:20px;
+    display:none;
+
+    
+}
+
+.folder.hide{
+    animation-fill-mode:both;
+    animation:hide 1s forwards;
+}
+
+@keyframes hide {
+    0% {
+        opacity:1; 
+    }
+
+    100% {
+        opacity:0;
+    }
+}
+
+.folder2.visible{
+        animation-fill-mode:both;
+        animation:visible 1s forwards;
+        display:block!important;
+
+    }
+    
+    @keyframes visible {
+        0% {
+            display:none;
+        }
+    
+        100% {
+            opacity:0;
+            display:block!important;
+        }
+    }
+
+.folderr{position:relative;}
+    .folderr:before {
+            content: "\f07b";  /* this is your text. You can also use UTF-8 character codes as I do here */
+            font-family:FontAwesome5Free;
+            left:-5px;
+            position:absolute;
+            top:0;
+         }
+
+    }
 
 
 
