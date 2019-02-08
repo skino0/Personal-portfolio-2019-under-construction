@@ -103,10 +103,27 @@ a{text-decoration:none;}
     position:absolute;
     list-style:none;
     z-index:1;
-    top:15%;
-    left:0%;
+    top:7%;
+    left:1%;
     right:80%;
     user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+    text-align:center;
+    padding-top:25px;
+    border-top:4px solid;
+    border-image:linear-gradient(to left, rgba(54, 54, 54, 0.9) 15%, rgba(70, 70, 70, 0.9) 35%, rgba(151, 151, 151, 0.7) 50%) 5;
+    animation-delay:1.5s!important;
+    animation:navjoin 1.8s forwards;
+    width:0px;
+}
+
+@keyframes navjoin {
+    0% {
+        width:0px;
+    }
+
+    100%{
+        width:280px;
+    }
 }
 
 #nav .li:first-of-type {
@@ -119,15 +136,14 @@ a{text-decoration:none;}
     animation-delay:4s!important;
 
 }
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 #nav .li {
-    margin-left:-500px;
-    font-family: 'Staatliches', cursive;
-    font-size:45px;
+    margin-left:-800px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:25px;
     color:rgba(255,255,255,.95);
-    letter-spacing:4.5px;
+    letter-spacing:2.5px;
     text-shadow:2.8px -.5px 0px #000;
-    font-weight:900;
     transition-duration:1s;
     animation:naveljoin .4s forwards;
     -webkit-animation:naveljoin .4s forwards;
@@ -136,22 +152,23 @@ a{text-decoration:none;}
 }
 
 #nav .li:hover {
-    transition-duration:.35s;
+    transition-duration:.2s;
     cursor:pointer;
-    color:#1e90ff;
-    text-shadow:2.8px .5px 0px rgb(255,255,255); 
+    color:#c7c7c7;
+    text-shadow:1.4px 1.5px 0px rgba(17, 17, 17, 0.8); 
+    transform:scale(1.2);
 }
 
 @keyframes naveljoin {
-    0%{margin-left:-500px;}
+    0%{margin-left:-800px;}
     100%{margin-left:20px;}
 }
 @-webkit-keyframes naveljoin {
-    0%{margin-left:-500px;}
+    0%{margin-left:-800px;}
     100%{margin-left:20px;}
 }
 @-moz-keyframes naveljoin {
-    0%{margin-left:-500px;}
+    0%{margin-left:-800px;}
     100%{margin-left:20px;}
 }
 
@@ -182,11 +199,7 @@ a{text-decoration:none;}
     width:70vw;
     height:90%;
     border-radius:10% 0% 0% 10%;
-    background: rgb(70,70,70); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(31, 31, 31, 0.4) 0%, rgba(114, 114, 114, 0.4) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(31, 31, 31, 0.4) 0%,rgba(114, 114, 114, 0.4) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(31, 31, 31, 0.4) 0%,rgba(114, 114, 114, 0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#464646', endColorstr='#fffffd',GradientType=0 );
+    background: rgba(41, 41, 41, 0.7);
     right:200%;
     top:5%;
     animation-delay:1s!important;
@@ -280,6 +293,39 @@ br {
         overflow: hidden;
     }
 }
+
+#aboutme.changing {
+    animation-delay:0s!important;
+    animation:changingabout 2s forwards;
+
+}
+
+@keyframes changingabout {
+    0% {
+        opacity:1;
+        height:520px;
+        padding:35px 20px 55px 20px;
+        white-space: wrap;
+        overflow: hidden;
+
+    }
+    50% {
+        opacity:0;
+        height:0px;
+        padding-top:0px;
+        padding-bottom:0px;
+        
+    }
+    100% {
+        opacity:1;
+        height:520px;
+        padding:35px 20px 55px 20px;
+        white-space: wrap;
+        overflow: hidden;
+
+    }
+
+}
 /*left project links*/
 #projects {
     height:100%;
@@ -291,16 +337,14 @@ br {
 .project {
     width:50%;
     font-size:20px;
-    padding:25px 0 0 15px;
+    padding:25px 0 0 25px;
     display:inline-block!important;
-    padding-left:45px;
 }
 
 .folder::before {
     content: "\f07b";
     font-family: 'Font Awesome\ 5 Free';
     font-size:25px;
-    font-weight:500;
     padding-right:4px;
     color:#ccc;
     font-weight:900;
@@ -342,27 +386,43 @@ br {
     color:#ccc;
 }
 
+
 /*end of left project links*/
 
 
 #sites {
-    border-right:2px rgba(255,255,255,.3) solid;
     position:absolute;
-    top:25%;
-    right:5%;
-    height:135px;
-    width:200px;
-    text-align:right;
-    padding:50px 35px 0 0;
+    top:50%;
+    right:10%;
+    transform:translate(10%,-50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:40px;
 }
 
 #github {
-    font-size:35px;
+    border:2px rgba(255,255,255,.4) solid;
+    padding:20px;
+    margin-right:20px;
+    transition-duration:.5s;
+
 }
 
 #codepen {
-    font-size:35px;
+    border:2px rgba(255,255,255,.4) solid;
+    padding:20px;
+    transition-duration:.5s;
+
 }
+
+#github:hover,#codepen:hover {
+    cursor:pointer;
+    transition-duration:.4s;
+    border:2px #ccc solid;
+    color:rgba(255,255,255,.4);
+
+}
+
+
 
 
 
