@@ -8,5 +8,10 @@ $(document).ready(function(){
 
     $('#work').click(function(){
         $('#aboutme').addClass('changing');
+        $('#projects').addClass('visible');
+        $('#github').addClass('vsb');
+        $('#codepen').addClass('vsbl');
+        $('#text').addClass('hide');
+
     });
 }); 

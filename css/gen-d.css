@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Staatliches');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-/*tommorow
-email replace one menu item
-somewhere social media  
-*/
+
 :root {
     --bluegray:#1f2e4e;
     --blue:#2980b9;
@@ -238,6 +235,7 @@ a{text-decoration:none;}
     z-index:3;
 }
 
+
 br {
     line-height:40px;
 }
@@ -307,38 +305,53 @@ br {
         padding:35px 20px 55px 20px;
         white-space: wrap;
         overflow: hidden;
-
     }
-    50% {
+
+    100% {
         opacity:0;
         height:0px;
         padding-top:0px;
         padding-bottom:0px;
-        
+        display:none; 
     }
-    100% {
-        opacity:1;
-        height:520px;
-        padding:35px 20px 55px 20px;
-        white-space: wrap;
-        overflow: hidden;
-
-    }
-
 }
+
 /*left project links*/
-#projects {
-    height:100%;
-    text-align:left;
-    border-left:2px rgba(255,255,255,.3) solid;
-
+#procontainer {
+    position:absolute;
+    top:5%;
+    right:750px;
+    font-size:25px;
+    width:770px;
+    height:90%;
 }
 
+
+#projects {
+    text-align:left;
+    border-left:15px rgba(0, 0, 0, 0.3) solid;
+    opacity:0;
+    height:0%;
+    z-index:5;
+}
+
+#projects.visible {
+    opacity:1;
+    height:100%;
+    transition-duration:1s;
+}
+
+.project:first-child {
+    margin-top:25%;
+
+}
 .project {
     width:50%;
     font-size:20px;
     padding:25px 0 0 25px;
     display:inline-block!important;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .folder::before {
@@ -393,7 +406,7 @@ br {
 #sites {
     position:absolute;
     top:50%;
-    right:10%;
+    right:3%;
     transform:translate(10%,-50%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:40px;
@@ -404,6 +417,13 @@ br {
     padding:20px;
     margin-right:20px;
     transition-duration:.5s;
+    opacity:0;
+}
+
+
+
+#github.vsb {
+    opacity:1;
 
 }
 
@@ -411,6 +431,15 @@ br {
     border:2px rgba(255,255,255,.4) solid;
     padding:20px;
     transition-duration:.5s;
+    opacity:0;
+
+}
+
+#codepen.vsbl {
+    border:2px rgba(255,255,255,.4) solid;
+    padding:20px;
+    transition-duration:.5s;
+    opacity:1;
 
 }
 
@@ -421,6 +450,8 @@ br {
     color:rgba(255,255,255,.4);
 
 }
+
+
 
 
 
