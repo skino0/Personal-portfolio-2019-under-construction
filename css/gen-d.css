@@ -280,10 +280,12 @@ br {
         overflow: hidden;
     }
 }
-
+/*left project links*/
 #projects {
     height:100%;
     text-align:left;
+    border-left:2px rgba(255,255,255,.3) solid;
+
 }
 
 .project {
@@ -291,7 +293,7 @@ br {
     font-size:20px;
     padding:25px 0 0 15px;
     display:inline-block!important;
-
+    padding-left:45px;
 }
 
 .folder::before {
@@ -301,6 +303,7 @@ br {
     font-weight:500;
     padding-right:4px;
     color:#ccc;
+    font-weight:900;
 }
 
 .folder.change::before {
@@ -310,30 +313,23 @@ br {
 
 @keyframes change {
     0%{
-        content: "\f07b";  
-        
+        content: "\f07b";   
     }
-
     50%{
         content: "\f07b";  
         filter:blur(50px);
-
-
     }
     60%{
         content: "\f07c";
         transform:scale(.1);
         color:#00a8ff;
         filter:blur(50px);
-
     }
-
     100%{
         content: "\f07c";
         transform:scale(1);
         color:#00a8ff;
         filter:blur(0px);
-
     }
 }
 
@@ -344,7 +340,28 @@ br {
 .link.op {
     transition-duration:.7s;
     color:#ccc;
+}
 
+/*end of left project links*/
+
+
+#sites {
+    border-right:2px rgba(255,255,255,.3) solid;
+    position:absolute;
+    top:25%;
+    right:5%;
+    height:135px;
+    width:200px;
+    text-align:right;
+    padding:50px 35px 0 0;
+}
+
+#github {
+    font-size:35px;
+}
+
+#codepen {
+    font-size:35px;
 }
 
 
