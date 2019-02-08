@@ -26,5 +26,6 @@ $('.project:eq( 5 )').click(function(){
 $('.project:eq( 6 )').click(function(){
                 $('.folder:eq( 6 )').addClass('change');
     $('.link:eq( 6 )').addClass('op');
-
 });
+
+
