@@ -12,7 +12,11 @@
 }
 a{text-decoration:none;}
 ::selection {background-color:rgba(110, 110, 110, 0.5);}
+body {
+    overflow-x:hidden;
+    overflow-y:hidden;
 
+}
 #bg {
     position:absolute;
     margin:0;
@@ -99,7 +103,6 @@ a{text-decoration:none;}
 #nav {
     position:absolute;
     list-style:none;
-    z-index:1;
     top:7%;
     left:1%;
     right:80%;
@@ -107,10 +110,13 @@ a{text-decoration:none;}
     text-align:center;
     padding-top:25px;
     border-top:4px solid;
-    border-image:linear-gradient(to left, rgba(54, 54, 54, 0.9) 15%, rgba(70, 70, 70, 0.9) 35%, rgba(151, 151, 151, 0.7) 50%) 5;
+    border-image:linear-gradient(to left, rgba(151, 151, 151, 0.7) 15%, rgba(175, 175, 175, 0.9) 35%, rgba(187, 187, 187, 0.9) 50%) 5;
     animation-delay:1.5s!important;
     animation:navjoin 1.8s forwards;
     width:0px;
+    z-index:10;
+
+
 }
 
 @keyframes navjoin {
@@ -119,7 +125,7 @@ a{text-decoration:none;}
     }
 
     100%{
-        width:280px;
+        width:320px;
     }
 }
 
@@ -145,7 +151,6 @@ a{text-decoration:none;}
     animation:naveljoin .4s forwards;
     -webkit-animation:naveljoin .4s forwards;
     -moz-animation:naveljoin .4s forwards;
-
 }
 
 #nav .li:hover {
@@ -214,15 +219,15 @@ a{text-decoration:none;}
 #aboutme {
     position:absolute;
     top:15%;
-    right:670px;
+    right:700px;
     font-size:25px;
     width:770px;
-    height:0px;
+    height:0%;
     color:#fff;
     line-height:45px;
     font-family: 'Montserrat', sans-serif;
     letter-spacing:2px;
-    background-color:rgba(8, 8, 8, 0.9);
+    background-color:rgba(20, 20, 20, 0.4);
     padding:35px 20px 55px 20px;
     opacity:0;
     user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
@@ -268,7 +273,7 @@ br {
     }
     100%{
         opacity:1;
-        height:520px;
+        height:100%;
         padding:35px 20px 50px 20px;
         white-space: wrap;
         overflow: hidden;
@@ -292,13 +297,13 @@ br {
     }
 }
 
-#aboutme.changing {
+#aboutme.hiding {
     animation-delay:0s!important;
-    animation:changingabout 2s forwards;
+    animation:hidingabout 1s forwards;
 
 }
 
-@keyframes changingabout {
+@keyframes hidingabout {
     0% {
         opacity:1;
         height:520px;
@@ -306,7 +311,6 @@ br {
         white-space: wrap;
         overflow: hidden;
     }
-
     100% {
         opacity:0;
         height:0px;
@@ -316,13 +320,40 @@ br {
     }
 }
 
+#aboutme.visibility {
+    animation-fill-mode:both;
+    animation-delay:0s!important;
+    animation:visibleabout 1s forwards;
+
+}
+
+
+@keyframes visibleabout {
+    0% {
+        opacity:0;
+        height:0px;
+        padding-top:0px;
+        padding-bottom:0px;
+        display:none; 
+    }
+    100% {
+        opacity:1;
+        height:520px;
+        padding:35px 20px 55px 20px;
+        white-space: wrap;
+        overflow: hidden;
+        display:block; 
+
+    }
+}
+
 /*left project links*/
 #procontainer {
     position:absolute;
     top:5%;
     right:750px;
     font-size:25px;
-    width:770px;
+    width:780px;
     height:90%;
 }
 
@@ -342,7 +373,7 @@ br {
 }
 
 .project:first-child {
-    margin-top:25%;
+    margin-top:30%;
 
 }
 .project {
@@ -351,7 +382,6 @@ br {
     padding:25px 0 0 25px;
     display:inline-block!important;
     font-family: 'Montserrat', sans-serif;
-
 }
 
 .folder::before {
@@ -399,9 +429,7 @@ br {
     color:#ccc;
 }
 
-
 /*end of left project links*/
-
 
 #sites {
     position:absolute;
@@ -420,11 +448,8 @@ br {
     opacity:0;
 }
 
-
-
 #github.vsb {
     opacity:1;
-
 }
 
 #codepen {
@@ -432,7 +457,6 @@ br {
     padding:20px;
     transition-duration:.5s;
     opacity:0;
-
 }
 
 #codepen.vsbl {
@@ -440,7 +464,6 @@ br {
     padding:20px;
     transition-duration:.5s;
     opacity:1;
-
 }
 
 #github:hover,#codepen:hover {
@@ -448,14 +471,62 @@ br {
     transition-duration:.4s;
     border:2px #ccc solid;
     color:rgba(255,255,255,.4);
-
 }
 
 
+#logo {
+    position:absolute;
+    z-index:11;
+    top:5%;
+    right:0%;/*
+    border-top:2px rgba(255,255,255,.4) solid;
+    border-bottom:2px rgba(255,255,255,.4) solid;
+    border-right:2px rgba(255,255,255,.4) solid;*/
 
+}
 
+#logo svg {
+    width:0px;
+    height:200px;
+    background-color:rgba(228, 227, 227, 0.5);
+    animation-delay:2.7s!important;
+    animation:svgsize .4s forwards;
+}
 
+@keyframes svgsize {
+    0% {
+        width:0px;
+    }
 
+    100% {
+        width:210px;
+    }
+}
 
-  
-  
+#logo svg #first {
+    animation-delay:3.3s!important;
+    fill-opacity: 0;
+    animation:svg .4s forwards;
+}
+
+@keyframes svg {
+    0% {
+        fill-opacity: 0;
+    }
+
+    100% {
+        fill-opacity: 1;
+    }
+}
+
+#logo svg #sec {
+    animation-delay:3.6s!important;
+    fill-opacity: 0;
+    animation:svg .4s forwards;
+}
+
+#logo svg #third {
+    animation-delay:3.8s!important;
+    fill-opacity: 0;
+    animation:svg 1s forwards;
+}
