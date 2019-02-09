@@ -1,7 +1,6 @@
 $('.project:eq( 0 )').click(function(){
     $('.folder:eq( 0 )').addClass('change');
     $('.link:eq( 0 )').addClass('op');
-
 });
 $('.project:eq( 1 )').click(function(){
     $('.folder:eq( 1 )').addClass('change');
