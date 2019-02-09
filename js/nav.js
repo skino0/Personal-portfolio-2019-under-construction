@@ -7,11 +7,14 @@ $(document).ready(function(){
     });
 
     $('#work').click(function(){
-        $('#aboutme').addClass('changing');
+        $('#aboutme').addClass('hiding');
         $('#projects').addClass('visible');
         $('#github').addClass('vsb');
         $('#codepen').addClass('vsbl');
         $('#text').addClass('hide');
+        $('.li:first-child').remove();
 
     });
+
+
 }); 
