@@ -5,6 +5,29 @@
     right:0%;
 }
 
+#logo svg  {
+    width:200px;
+    animation:leave .3s forwards;
+}
+
+#logo svg.leave  {
+    width:200px;
+    animation:leave .3s forwards;
+}
+@keyframes leave {
+    0% {
+        width:200px;
+
+    }
+
+    100% {
+        width:0px;
+        right:-100px;
+        display:none;
+
+    }
+}
+
 #logo svg {
     width:0px;
     height:200px;

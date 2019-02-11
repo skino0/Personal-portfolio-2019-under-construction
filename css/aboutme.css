@@ -1,0 +1,140 @@
+#aboutme {
+    position:absolute;
+    top:15%;
+    right:700px;
+    font-size:25px;
+    width:770px;
+    height:0%;
+    color:#fff;
+    line-height:45px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing:2px;
+    background-color:rgba(20, 20, 20, 0.4);
+    padding:35px 20px 55px 20px;
+    opacity:0;
+    user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+    animation-delay:1.8s!important;
+    animation:aboutmejoin 2s forwards;
+    -webkit-animation-delay:1.8s!important;
+    -webkit-animation:aboutmejoin 2s forwards;
+    -moz-animation-delay:1.8s!important;
+    -moz-animation:aboutmejoin 2s forwards;
+    z-index:3;
+}
+
+
+br {
+    line-height:40px;
+}
+
+@keyframes aboutmejoin {
+    0%{
+        opacity:0;
+        height:0px!important;
+        padding-top:0px!important;
+        padding-bottom:0px!important;
+        white-space: wrap;
+        overflow: hidden;
+    }
+    100%{
+        opacity:1;
+        height:520px;
+        padding:35px 20px 55px 20px;
+        white-space: wrap;
+        overflow: hidden;
+    }
+}
+@-webkit-keyframes aboutmejoin {
+    0%{
+        opacity:0;
+        height:0px!important;
+        padding-top:0px!important;
+        padding-bottom:0px!important;
+        white-space: wrap;
+        overflow: hidden;
+    }
+    100%{
+        opacity:1;
+        height:100%;
+        padding:35px 20px 50px 20px;
+        white-space: wrap;
+        overflow: hidden;
+    }
+}
+@-moz-keyframes aboutmejoin {
+    0%{
+        opacity:0;
+        height:0px!important;
+        padding-top:0px!important;
+        padding-bottom:0px!important;
+        white-space: wrap;
+        overflow: hidden;
+    }
+    100%{
+        opacity:1;
+        height:520px;
+        padding:35px 20px 55px 20px;
+        white-space: wrap;
+        overflow: hidden;
+    }
+}
+
+#aboutme.hiding {
+    animation-delay:0s!important;
+    animation:hidingabout .5s forwards;
+    -webkit-animation-delay:0s!important;
+    -webkit-animation:hidingabout .5s forwards;
+    -moz-animation-delay:0s!important;
+    -moz-animation:hidingabout .5s forwards;
+}
+
+@keyframes hidingabout {
+    0% {
+        opacity:1;
+        height:520px;
+        padding:35px 20px 55px 20px;
+        white-space: wrap;
+        overflow: hidden;
+    }
+    100% {
+        opacity:0;
+        height:0px;
+        padding-top:0px;
+        padding-bottom:0px;
+        display:none; 
+    }
+}
+
+@-webkit-keyframes hidingabout {
+    0% {
+        opacity:1;
+        height:520px;
+        padding:35px 20px 55px 20px;
+        white-space: wrap;
+        overflow: hidden;
+    }
+    100% {
+        opacity:0;
+        height:0px;
+        padding-top:0px;
+        padding-bottom:0px;
+        display:none; 
+    }
+}
+
+@-moz-keyframes hidingabout {
+    0% {
+        opacity:1;
+        height:520px;
+        padding:35px 20px 55px 20px;
+        white-space: wrap;
+        overflow: hidden;
+    }
+    100% {
+        opacity:0;
+        height:0px;
+        padding-top:0px;
+        padding-bottom:0px;
+        display:none; 
+    }
+}

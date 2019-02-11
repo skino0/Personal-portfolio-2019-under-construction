@@ -7,24 +7,8 @@
     user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
     text-align:center;
     padding-top:25px;
-    border-top:4px solid;
-    border-image:linear-gradient(to left, rgba(151, 151, 151, 0.7) 15%, rgba(175, 175, 175, 0.9) 35%, rgba(187, 187, 187, 0.9) 50%) 5;
-    animation-delay:1.5s!important;
-    animation:navjoin 1.8s forwards;
-    width:0px;
+    width:270px;
     z-index:10;
-
-
-}
-
-@keyframes navjoin {
-    0% {
-        width:0px;
-    }
-
-    100%{
-        width:320px;
-    }
 }
 
 #nav .li:first-of-type {
@@ -37,15 +21,15 @@
     animation-delay:4s!important;
 
 }
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
 #nav .li {
     margin-left:-800px;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size:25px;
-    color:rgba(255,255,255,.95);
+    font-size:30px;
+    color:rgba(93, 241, 252, 0.95);
     letter-spacing:2.5px;
     text-shadow:2.8px -.5px 0px #000;
-    transition-duration:1s;
+    transition-duration:.5s;
     animation:naveljoin .4s forwards;
     -webkit-animation:naveljoin .4s forwards;
     -moz-animation:naveljoin .4s forwards;

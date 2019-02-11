@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Staatliches');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 :root {
     --bluegray:#1f2e4e;
     --blue:#2980b9;
@@ -15,8 +15,8 @@ a{text-decoration:none;}
 body {
     overflow-x:hidden;
     overflow-y:hidden;
-
 }
+
 #bg {
     position:absolute;
     margin:0;
@@ -44,7 +44,6 @@ body {
 @-webkit-keyframes frame1join {0%{left:-200%;}100%{left:0%;}}
 @-moz-keyframes frame1join {0%{left:-200%;}100%{left:0%;}}
 
-
 #frame2 {
     position:absolute;
     z-index:1;
@@ -55,13 +54,11 @@ body {
     animation:frame2join 1s forwards;
     -webkit-animation:frame2join 1s forwards;
     -moz-animation:frame2join 1s forwards;
-
 }
 
 @keyframes frame2join {0%{right:-200%;}100%{right:0%;}}
 @-webkit-keyframes frame2join {0%{right:-200%;}100%{right:0%;}}
 @-moz-keyframes frame2join {0%{right:-200%;}100%{right:0%;}}
-
 
 /*first visible elements */
 
@@ -98,8 +95,6 @@ body {
     100%{width:700px;opacity:1;}
 }
 
-
-
 #over {
     position:absolute;
     z-index:0;
@@ -121,134 +116,7 @@ body {
 @-webkit-keyframes olayjoin {0%{right:100%;}100% {right:700px;}}
 @-moz-keyframes olayjoin {0%{right:100%;}100% {right:700px;}}
 
-#aboutme {
-    position:absolute;
-    top:15%;
-    right:700px;
-    font-size:25px;
-    width:770px;
-    height:0%;
-    color:#fff;
-    line-height:45px;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing:2px;
-    background-color:rgba(20, 20, 20, 0.4);
-    padding:35px 20px 55px 20px;
-    opacity:0;
-    user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
-    animation-delay:1.8s!important;
-    animation:aboutmejoin 2s forwards;
-    -webkit-animation-delay:1.8s!important;
-    -webkit-animation:aboutmejoin 2s forwards;
-    -moz-animation-delay:1.8s!important;
-    -moz-animation:aboutmejoin 2s forwards;
-    z-index:3;
-}
 
 
-br {
-    line-height:40px;
-}
 
-@keyframes aboutmejoin {
-    0%{
-        opacity:0;
-        height:0px!important;
-        padding-top:0px!important;
-        padding-bottom:0px!important;
-        white-space: wrap;
-        overflow: hidden;
-    }
-    100%{
-        opacity:1;
-        height:520px;
-        padding:35px 20px 55px 20px;
-        white-space: wrap;
-        overflow: hidden;
-    }
-}
-@-webkit-keyframes aboutmejoin {
-    0%{
-        opacity:0;
-        height:0px!important;
-        padding-top:0px!important;
-        padding-bottom:0px!important;
-        white-space: wrap;
-        overflow: hidden;
-    }
-    100%{
-        opacity:1;
-        height:100%;
-        padding:35px 20px 50px 20px;
-        white-space: wrap;
-        overflow: hidden;
-    }
-}
-@-moz-keyframes aboutmejoin {
-    0%{
-        opacity:0;
-        height:0px!important;
-        padding-top:0px!important;
-        padding-bottom:0px!important;
-        white-space: wrap;
-        overflow: hidden;
-    }
-    100%{
-        opacity:1;
-        height:520px;
-        padding:35px 20px 55px 20px;
-        white-space: wrap;
-        overflow: hidden;
-    }
-}
-
-#aboutme.hiding {
-    animation-delay:0s!important;
-    animation:hidingabout 1s forwards;
-
-}
-
-@keyframes hidingabout {
-    0% {
-        opacity:1;
-        height:520px;
-        padding:35px 20px 55px 20px;
-        white-space: wrap;
-        overflow: hidden;
-    }
-    100% {
-        opacity:0;
-        height:0px;
-        padding-top:0px;
-        padding-bottom:0px;
-        display:none; 
-    }
-}
-
-#aboutme.visibility {
-    animation-fill-mode:both;
-    animation-delay:0s!important;
-    animation:visibleabout 1s forwards;
-
-}
-
-
-@keyframes visibleabout {
-    0% {
-        opacity:0;
-        height:0px;
-        padding-top:0px;
-        padding-bottom:0px;
-        display:none; 
-    }
-    100% {
-        opacity:1;
-        height:520px;
-        padding:35px 20px 55px 20px;
-        white-space: wrap;
-        overflow: hidden;
-        display:block; 
-
-    }
-}
 
