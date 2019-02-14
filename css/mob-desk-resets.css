@@ -1,0 +1,104 @@
+/*reset desktop elements*/
+@media (max-width:30rem) {
+    a{text-decoration:none;}
+    body {
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    #bg {
+        display:none;
+    } 
+    #frame {
+        display:none;
+    }
+    #frame2 {
+        display:none!important;
+    }    
+    #ski {
+        display:none;
+    }
+    #over {
+        display:none;
+    }
+    #aboutme {
+        display:none;
+        /*position:absolute;
+        top:15%;
+        right:700px;
+        font-size:25px;
+        width:770px;
+        height:0%;
+        color:#fff;
+        line-height:45px;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing:2px;
+        background-color:rgba(20, 20, 20, 0.4);
+        padding:35px 20px 55px 20px;
+        opacity:0;
+        user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+        animation-delay:1.8s!important;
+        animation:aboutmejoin 2s forwards;
+        -webkit-animation-delay:1.8s!important;
+        -webkit-animation:aboutmejoin 2s forwards;
+        -moz-animation-delay:1.8s!important;
+        -moz-animation:aboutmejoin 2s forwards;
+        z-index:3;*/
+    }
+    br {
+        line-height:0px;
+    }
+    #logo {
+        display:none;
+    }
+    #logo svg  {
+        display:none;
+    }
+    #procontainer {
+        display:none;
+    }
+    #projects {
+        display:none;
+    }
+    .folder::before {
+        display:none;
+    }
+    .link {
+        display:none;
+    }
+    #sites {
+        display:none;
+    }
+    #nav {
+        display:none;
+    }
+    #nav .li {
+        display:none;
+
+    }    
+    #mail {
+        display:none;
+    }
+    #mo-bg {
+        position:absolute;
+        background-color:#000;
+        width:100%;
+        height:50%;
+
+    }
+    
+}
+
+/*phone styles*/
+@media (max-width:30rem) {
+    /*Begining of mobile elems*/
+
+    #mo-bg {
+        position:absolute;
+        background-color:#000;
+        width:100%;
+        height:50%;
+
+    }
+
+
+}
