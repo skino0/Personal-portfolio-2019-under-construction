@@ -1,90 +1,65 @@
-/*reset desktop elements*/
-@media (min-width:30rem) {
+@media (max-width:30rem) {
     a{text-decoration:none;}
     body {
         overflow-x:visible;
         overflow-y:visible;
     }
-    #bg {
-        display:none;
-    } 
-    #frame {
-        display:none;
-    }
-    #frame2 {
-        display:none;
-    }    
-    #ski {
-        display:none;
-    }
-    #over {
-        display:none;
-    }
-    #aboutme {
-        display:none;
-        /*position:absolute;
-        top:15%;
-        right:700px;
-        font-size:25px;
-        width:770px;
-        height:0%;
-        color:#fff;
-        line-height:45px;
-        font-family: 'Montserrat', sans-serif;
-        letter-spacing:2px;
-        background-color:rgba(20, 20, 20, 0.4);
-        padding:35px 20px 55px 20px;
-        opacity:0;
-        user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
-        animation-delay:1.8s!important;
-        animation:aboutmejoin 2s forwards;
-        -webkit-animation-delay:1.8s!important;
-        -webkit-animation:aboutmejoin 2s forwards;
-        -moz-animation-delay:1.8s!important;
-        -moz-animation:aboutmejoin 2s forwards;
-        z-index:3;*/
-    }
-    br {
-        line-height:0px;
-    }
-    #logo {
-        display:none;
-    }
-    #logo svg  {
-        display:none;
-    }
-    #procontainer {
-        display:none;
-    }
-    #projects {
-        display:none;
-    }
-    .folder::before {
-        display:none;
-    }
-    .link {
-        display:none;
-    }
-    #sites {
-        display:none;
-    }
-    #nav {
-        display:none;
-    }
-    #nav .li {
-        display:none;
 
-    }    
-    #mail {
-        display:none;
+    #mo-bg1 {
+        position:absolute;
+        background-color:#2f3542;
+        width:100vw;
+        height:50vh;
+        top:0%;
+        z-index:0;
     }
+
+    /*overlay under bg1*/
+    #underbg1 {
+        position:absolute;
+        background: rgb(26,188,156); /* Old browsers */
+        background: -moz-linear-gradient(left, rgba(26,188,156,.85) 0%, rgba(125,185,232,.85) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(26,188,156,.85) 0%,rgba(125,185,232,.85) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(26,188,156,.85) 0%,rgba(125,185,232,.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1abc9c', endColorstr='#7db9e8',GradientType=1 );
+        width:100vw;
+        height:50vh;
+        top:2.5%;
+        z-index:-1;
+        -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 95%, 90% 100%, 10% 100%, 0 95%, 0 0);
+        clip-path: polygon(50% 0%, 100% 0, 100% 95%, 90% 100%, 10% 100%, 0 95%, 0 0);
+        border-bottom:4px solid;
+        border-image: linear-gradient(to left, rgba(26,188,156,.8) 0%, rgba(125,185,232,.8) 100%) 5 ;
+    }
+
+    #mo-bg2 {
+        position:absolute;
+        background: rgb(236,240,241); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(236,240,241,1) 59%, rgba(204,204,204,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(236,240,241,1) 59%,rgba(204,204,204,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(236,240,241,1) 59%,rgba(204,204,204,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ecf0f1', endColorstr='#cccccc',GradientType=0 ); 
+        width:100vw;
+        height:50vh;
+        top:50%;
+        z-index:-2;
+    }
+
+    #mo-ski {
+        position:absolute;
+        bottom:0%;
+        right:0%;
+        width:220px;
+        height:220px;
+
+    }
+
+    /*  
+    vertical sec bg
+    remove photo form bg1 
+    add text 
+    continue
+
+    */
     
-
-}
-
-/*phone styles*/
-@media (max-width:30rem) {
-
-
-
 }
