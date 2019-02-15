@@ -51,12 +51,46 @@
         right:0%;
         width:220px;
         height:220px;
-
+        z-index:1;
     }
+    @import url('https://fonts.googleapis.com/css?family=Montserrat');
+    .header {
+        position:absolute;
+        /*standard left*/
+        left:4%;
+        /*bg*/
+        background: rgb(91,91,91); /* Old browsers */
+        background: -moz-linear-gradient(45deg, rgba(91,91,91,.75) 0%, rgba(0,0,0,.3) 27%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, rgba(91,91,91,.75) 0%,rgba(0,0,0,.3) 27%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, rgba(91,91,91,.75) 0%,rgba(0,0,0,.3) 27%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b5b5b', endColorstr='#000000',GradientType=1 ); 
+        /*font styles*/
+        color:#ccc;
+        font-size:18px;
+        letter-spacing:1.4px;
+        line-height:30px;
+        text-align:right;
+        font-family: 'Montserrat', sans-serif;
+        font-weight:600;
+        text-shadow:0px 0px 1px #00cec9;
+        /*width border padd styles*/
+        width:170px;
+        border-radius:4.5px;
+        padding:5px 15px 5px 0px;
+    }
+
+    .header:first-child {
+        top:25%;
+    }
+
+    .header:nth-child(2) {
+        top:50%;
+        width:150px;
+    }
+
 
     /*  
     vertical sec bg
-    remove photo form bg1 
     add text 
     continue
 
