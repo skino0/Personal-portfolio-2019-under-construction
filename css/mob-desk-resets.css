@@ -67,19 +67,23 @@
     #mo-bg1 {
         display:none;
     }
-
     #underbg1 {
         display:none;
     }
-
     #mo-bg2 {
         display:none;
     }
-
     #mo-ski {
         display:none;
     }
     .header {
         display:none;
     }
+    #scroll {
+        display:none;
+    }
+    #bg3 {
+        display:none;
+    }
+
 }
