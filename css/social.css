@@ -1,5 +1,5 @@
+/*Mobile*/
 @media (max-width:30rem) {
-
     #social {
         font-size:27px;
     }
@@ -38,5 +38,57 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#282828',GradientType=1 );
         color:#ccc;
     }
+}
+
+/*Desktop*/
+@media (min-width:30rem) {
+    #social {
+        font-size:27px;
+        z-index:10;
+    }
+
+    .fa-instagram {
+        position:absolute;
+        top:40%;
+        left:0%;
+        transform:translateY(-40%);
+        
+    }
+    
+    .fa-twitter  {
+        position:absolute;
+        top:50%;
+        left:0%;
+        transform:translateY(-50%);
+
+    }
+    .fa-linkedin-in  {
+        position:absolute;
+        top:60%;
+        left:0%;
+        transform:translateY(-60%);
+        content: "\f0e1";
+        font-family: 'Font Awesome\ 5 Free';
+        
+    }
+    
+    .icon {
+        padding:15px 20px 15px 20px;
+        background: rgb(17,17,17); /* Old browsers */
+        background: -moz-linear-gradient(45deg, rgba(17,17,17,1) 0%, rgba(40,40,40,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, rgba(17,17,17,1) 0%,rgba(40,40,40,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, rgba(17,17,17,1) 0%,rgba(40,40,40,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#282828',GradientType=1 );
+        color:#ccc;
+        transition-duration:1s;
+    }
+    
+    
+    .icon:hover {
+        cursor:pointer;
+        transition-duration:1.4s;
+        color:#fff;
+    }
+    
 }
 
