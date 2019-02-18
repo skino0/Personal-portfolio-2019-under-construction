@@ -2,7 +2,6 @@
 
     #social {
         font-size:27px;
-        
     }
 
     .fa-instagram {
@@ -30,9 +29,14 @@
         
     }
     
-    .test {
-        background-color:red;
-        
+    .icon {
+        padding:15px 20px 15px 20px;
+        background: rgb(17,17,17); /* Old browsers */
+        background: -moz-linear-gradient(45deg, rgba(17,17,17,1) 0%, rgba(40,40,40,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, rgba(17,17,17,1) 0%,rgba(40,40,40,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, rgba(17,17,17,1) 0%,rgba(40,40,40,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#282828',GradientType=1 );
+        color:#ccc;
     }
 }
 
