@@ -41,11 +41,9 @@
         border-bottom:4px solid;
         border-image: linear-gradient(to left, rgba(26,188,156,.8) 0%, rgba(125,185,232,.8) 100%) 5 ;
         opacity:0;
-        animation-delay:1.8s!important;
-        animation:under 2s forwards;
+        animation-delay:2s!important;
+        animation:under .5s forwards;
     }
- /* sec 1s + 1s bg1 = , 1.8 +2s */
-
     @keyframes under {
         0% {
             top:-90%;
@@ -143,16 +141,16 @@
 
     .header:first-child {
         top:25%;
-        animation-delay:.8s!important;
-        animation:header 1s forwards;
+        animation-delay:1.5s!important;
+        animation:header .3s forwards;
 
     }
 
     .header:nth-child(2) {
         top:50%;
         width:150px;
-        animation-delay:1.8s!important;
-        animation:header 1s forwards;
+        animation-delay:1.9s!important;
+        animation:header .3s forwards;
     }
 
     @import url('https://fonts.googleapis.com/css?family=Coda+Caption:800');
@@ -172,7 +170,27 @@
         text-shadow:-2.2px 0px .5px #888888;
         letter-spacing:3.5px;
         color:#2c3e50;
+        animation-delay:2.4s!important;
+        animation:secheader 1.2s forwards;
+        opacity:0;
+        filter:blur(20px);
     }
+    @keyframes secheader {
+        0% {
+            top:-50%;
+            opacity:0;
+            filter:blur(20px);
+
+        }
+        100% {
+            top:8%;
+            opacity:1;
+            filter:blur(0px);
+
+        }
+    }
+
+
 
     #scroll {
         position:absolute;
@@ -306,9 +324,6 @@
         text-shadow:1.3px 1px 1.5px rgba(255, 255, 255);
         font-family:sans-serif;
     }
-
-
-
 
 
     /*  
