@@ -48,29 +48,38 @@
     .icon:nth-child(1) {
         animation-delay:3.4s!important;
         animation:sicon .4s forwards;
+        -moz-animation-delay:3.4s!important;
+        -moz-animation:sicon .4s forwards;
+        -webkit-animation-delay:3.4s!important;
+        -webkit-animation:sicon .4s forwards;
+        -o-animation-delay:3.4s!important;
+        -o-animation:sicon .4s forwards;
     }
     .icon:nth-child(2) {
         animation-delay:3.6s!important;
         animation:sicon .4s forwards;
+        -moz-animation-delay:3.6s!important;
+        -moz-animation:sicon .4s forwards;
+        -webkit-animation-delay:3.6s!important;
+        -webkit-animation:sicon .4s forwards;
+        -o-animation-delay:3.6s!important;
+        -o-animation:sicon .4s forwards;
     }
     .icon:nth-child(3) {
         animation-delay:3.8s!important;
         animation:sicon .4s forwards;
+        -moz-animation-delay:3.8s!important;
+        -moz-animation:sicon .4s forwards;
+        -webkit-animation-delay:3.8s!important;
+        -webkit-animation:sicon .4s forwards;
+        -o-animation-delay:3.8s!important;
+        -o-animation:sicon .4s forwards;
     }
 
-    @keyframes sicon {
-        0% {
-            top:51%;
-            opacity:0;
-        }
-
-        100% {
-            top:50%;
-            opacity:1;
-
-        }
-
-    }
+    @keyframes sicon {0% {top:51%;opacity:0;}100% {top:50%;opacity:1;}}
+    @-moz-keyframes sicon {0% {top:51%;opacity:0;}100% {top:50%;opacity:1;}}
+    @-webkit-keyframes sicon {0% {top:51%;opacity:0;}100% {top:50%;opacity:1;}}
+    @-o-keyframes sicon {0% {top:51%;opacity:0;}100% {top:50%;opacity:1;}}
 
 }
 
@@ -89,7 +98,6 @@
         top:40%;
         left:0%;
         transform:translateY(-40%);
-        
     }
     
     .fa-twitter  {
@@ -97,7 +105,6 @@
         top:50%;
         left:0%;
         transform:translateY(-50%);
-
     }
     .fa-linkedin-in  {
         position:absolute;
