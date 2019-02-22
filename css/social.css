@@ -1,6 +1,9 @@
 /*Mobile*/
 @media (max-width:30rem) {
     #social {
+        display:none;
+    }
+    #mo-social {
         font-size:27px;
     }
 
@@ -42,6 +45,9 @@
 
 /*Desktop*/
 @media (min-width:30rem) {
+    #mo-social {
+        display:none;
+    }
     #social {
         font-size:27px;
         z-index:10;
