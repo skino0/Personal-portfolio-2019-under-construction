@@ -84,7 +84,7 @@
         position:absolute;
         bottom:0%;
         right:0%;
-        width:220px;
+        width:220px;/*220px old*/
         height:220px;
         z-index:1;
         animation-delay:1s!important;
@@ -190,7 +190,6 @@
         }
     }
 
-
     #scroll {
         position:absolute;
         bottom:0%;
@@ -263,7 +262,6 @@
         width:285px;
         line-height:27px;
         font-family: 'Montserrat', sans-serif;
-
     }
 
     .part:first-child,.part:nth-child(3),.part:nth-child(5) {

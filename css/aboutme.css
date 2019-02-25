@@ -1,9 +1,10 @@
 #aboutme {
     position:absolute;
-    top:15%;
+    top:20%;
     right:700px;
-    font-size:25px;
-    width:770px;
+    font-size:30pt;/*25px first*/
+    max-width:770px;
+    max-width:470px;
     height:0%;
     color:#fff;
     line-height:45px;

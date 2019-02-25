@@ -65,7 +65,7 @@ body {
 #ski {
     position:absolute;
     z-index:1;
-    width:700px;
+    width:700px;/*700*/
     height:90%;
     top:5%;
     right:0;
