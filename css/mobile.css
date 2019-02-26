@@ -206,7 +206,7 @@
         width:300px;
         /*text styles*/
         text-align:center;
-        font-size:25px;
+        font-size:20px;
         line-height:30px;
         font-weight:700;
         font-family: 'Montserrat', sans-serif;
@@ -226,20 +226,20 @@
     }
     @keyframes secheader {
         0% {top:-50%;opacity:0;filter:blur(20px);}
-        100% {top:8%;opacity:1;filter:blur(0px);}}
+        100% {top:15%;opacity:1;filter:blur(0px);}}
         @-webkit-keyframes secheader {
             0% {top:-50%;opacity:0;filter:blur(20px);}
-            100% {top:8%;opacity:1;filter:blur(0px);}}
+            100% {top:15%;opacity:1;filter:blur(0px);}}
             @-moz-keyframes secheader {
                 0% {top:-50%;opacity:0;filter:blur(20px);}
-                100% {top:8%;opacity:1;filter:blur(0px);}}
+                100% {top:15%;opacity:1;filter:blur(0px);}}
                 @-o-keyframes secheader {
                     0% {top:-50%;opacity:0;filter:blur(20px);}
-                    100% {top:8%;opacity:1;filter:blur(0px);}}
+                    100% {top:15%;opacity:1;filter:blur(0px);}}
 
     #scroll {
         position:absolute;
-        bottom:0%;
+        bottom:3.5%;
         left:50%;
         transform:translate(-50%,0%);
         width:100vw;
