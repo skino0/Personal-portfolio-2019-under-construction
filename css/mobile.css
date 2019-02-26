@@ -330,10 +330,10 @@
         top:70%;
         left:50%;
         transform:translate(-50%,-70%);
-        color:#ff7675;
-        font-size:100px;
+        color:#eb4d4b;
+        font-size:80px;
         font-weight:400;
-        text-shadow:1.3px 1px 1.5px rgba(255, 255, 255);
+        text-shadow:1.3px 1px 1.5px #6583c4;
         font-family:sans-serif;
     }
 
@@ -344,9 +344,12 @@
         transform:translate(-50%,4%);
         color:#fff;
         font-size:18px;
-        letter-spacing:2.7px;
+        letter-spacing:3.7px;
         font-family: 'Montserrat', sans-serif;
-
+        text-align:center;
+        line-height:25px;
+        text-shadow:-1.4px -1.4px 0px #000; 
+        font-weight:600;
     }
 
 
