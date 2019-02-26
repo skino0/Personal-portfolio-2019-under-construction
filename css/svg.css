@@ -13,20 +13,23 @@
 #logo svg.leave  {
     width:200px;
     animation:leave .3s forwards;
+    -webkit-animation:leave .3s forwards;
+    -moz-animation:leave .3s forwards;
+    -o-animation:leave .3s forwards;
+
 }
 @keyframes leave {
-    0% {
-        width:200px;
-
-    }
-
-    100% {
-        width:0px;
-        right:-100px;
-        display:none;
-
-    }
-}
+    0% {width:200px;}
+    100% {width:0px;right:-100px;display:none;}}
+    @-webkit-keyframes leave {
+        0% {width:200px;}
+        100% {width:0px;right:-100px;display:none;}}
+        @-moz-keyframes leave {
+            0% {width:200px;}
+            100% {width:0px;right:-100px;display:none;}}
+            @-o-keyframes leave {
+                0% {width:200px;}
+                100% {width:0px;right:-100px;display:none;}}
 
 #logo svg {
     width:0px;
@@ -34,42 +37,72 @@
     background-color:transparent;
     animation-delay:2.7s!important;
     animation:svgsize .4s forwards;
+    -webkit-animation-delay:2.7s!important;
+    -webkit-animation:svgsize .4s forwards;
+    -moz-animation-delay:2.7s!important;
+    -moz-animation:svgsize .4s forwards;
+    -o-animation-delay:2.7s!important;
+    -o-animation:svgsize .4s forwards;
 }
 
 @keyframes svgsize {
-    0% {
-        width:0px;
-    }
-
-    100% {
-        width:210px;
-    }
-}
+    0% {width:0px;}
+    100% {width:210px;}}
+    @-webkit-keyframes svgsize {
+        0% {width:0px;}
+        100% {width:210px;}}
+        @-moz-keyframes svgsize {
+            0% {width:0px;}
+            100% {width:210px;}}
+            @-o-keyframes svgsize {
+                0% {width:0px;}
+                100% {width:210px;}}
 
 #logo svg #first {
-    animation-delay:3.3s!important;
     fill-opacity: 0;
     animation:svg .4s forwards;
+    animation-delay:3.3s!important;
+    -webkit-animation:svg .4s forwards;
+    -webkit-animation-delay:3.3s!important;
+    -moz-animation:svg .4s forwards;
+    -moz-animation-delay:3.3s!important;
+    -o-animation:svg .4s forwards;
+    -o-animation-delay:3.3s!important;
 }
 
 @keyframes svg {
-    0% {
-        fill-opacity: 0;
-    }
-
-    100% {
-        fill-opacity: 1;
-    }
-}
+    0% {fill-opacity: 0;}
+    100% {fill-opacity: 1;}}
+    @-webkit-keyframes svg {
+        0% {fill-opacity: 0;}
+        100% {fill-opacity: 1;}}
+        @-moz-keyframes svg {
+            0% {fill-opacity: 0;}
+            100% {fill-opacity: 1;}}
+            @-o-keyframes svg {
+                0% {fill-opacity: 0;}
+                100% {fill-opacity: 1;}}
 
 #logo svg #sec {
-    animation-delay:3.6s!important;
     fill-opacity: 0;
+    animation-delay:3.6s!important;
     animation:svg .4s forwards;
+    -webkit-animation-delay:3.6s!important;
+    -webkit-animation:svg .4s forwards;
+    -moz-animation-delay:3.6s!important;
+    -moz-animation:svg .4s forwards;
+    -o-animation-delay:3.6s!important;
+    -o-animation:svg .4s forwards;
 }
 
 #logo svg #third {
-    animation-delay:3.8s!important;
     fill-opacity: 0;
+    animation-delay:3.8s!important;
     animation:svg 1s forwards;
+    -webkit-animation-delay:3.8s!important;
+    -webkit-animation:svg 1s forwards;
+    -moz-animation-delay:3.8s!important;
+    -moz-animation:svg 1s forwards;
+    -o-animation-delay:3.8s!important;
+    -o-animation:svg 1s forwards;
 }
