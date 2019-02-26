@@ -337,6 +337,18 @@
         font-family:sans-serif;
     }
 
+    #totop {
+        position:absolute;
+        left:50%;
+        bottom:4%;
+        transform:translate(-50%,4%);
+        color:#fff;
+        font-size:18px;
+        letter-spacing:2.7px;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
 
     /*  
     vertical sec bg
