@@ -2,15 +2,14 @@
     position:absolute;
     top:24%;
     right:700px;
-    font-size:18px;/*25px first*/
+    font-size:1em;/*25px first*/
     width: 35vw;
-    height:0%;
     color:#fff;
     line-height:45px;
     font-family: 'Montserrat', sans-serif;
     letter-spacing:2px;
     background-color:rgba(20, 20, 20, 0.4);
-    padding:0px 20px 25px 20px!important;
+    padding:0px 20px 0px 20px!important;
     opacity:0;
     user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
     animation-delay:1.8s!important;
@@ -31,7 +30,6 @@ br {
 @keyframes aboutmejoin {
     0%{
         opacity:0;
-        height:0px!important;
         padding-top:0px!important;
         padding-bottom:0px!important;
         white-space: wrap;
@@ -39,7 +37,6 @@ br {
     }
     100%{
         opacity:1;
-        height:520px;
         padding:35px 20px 55px 20px;
         white-space: wrap;
         overflow: hidden;
